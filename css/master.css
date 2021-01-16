@@ -35,24 +35,46 @@ h1 {
   height: 200px;
   border-radius: 10px;
   margin: 20px 10px;
-  background-image: url(../img/bicycle.png);
   background-color: white;
   background-size: contain;
   background-repeat: no-repeat;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.card_1 > p {
+.card_1 {
+  background-image: url(../img/bicycle.png);
+}
+
+.card_2 {
+  background-image: url(../img/tram.png);
+}
+
+.card_3 {
+  background-image: url(../img/cruise.png);
+}
+
+.card_4 {
+  background-image: url(../img/submarine.png);
+}
+
+.card_5 {
+  background-image: url(../img/tractor.png);
+}
+
+.card_6 {
+  background-image: url(../img/air_balloon.png);
+}
+
+div > p {
   position: absolute;
-  display: none;
   bottom: 5px;
-  left: 10px;
+  left: 20px;
   font-size: 30px;
   color: yellow;
   background-color: white;
   text-shadow: 2px 2px grey;
+  z-index: 0;
 }
 
-}
 #reverse {
   background-image: url(../img/air_balloon.png);
   background-size: contain;
@@ -61,6 +83,7 @@ h1 {
 }
 #reverse > p {
   position: absolute;
+  display: block;
   bottom: 5px;
   left: 10px;
   font-size: 30px;
@@ -77,6 +100,7 @@ h1 {
   height: 200px;
   border-radius: 10px;
   margin-bottom: 20px;
+  z-index: 4;
 }
 .pattern:hover {
   display:none;
